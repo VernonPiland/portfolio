@@ -47,6 +47,11 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 10px #ff0000;
 }
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 .neon-button {
     background-color: #ff0000;
     border: none;
