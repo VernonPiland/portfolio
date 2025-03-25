@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    }
+ .container {
+    padding: 20px;
+}
+.neon-text {
+    font-size: 2rem;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+.description {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #ccc;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.project-card {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff00ff;
+}
+.neon-button {
+    background-color: #ff00ff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #fff;
+}
+.neon-button:hover {
+    background-color: #9900cc;
+}
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.neon-icon {
+    color: #ff00ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+.neon-icon:hover {
+    color: #9900cc;
+    text-shadow: 0 0 10px #ff00ff;
+}
+    
+@media (max-width: 600px) {
+    .neon-text {
+        font-size: 1.5rem;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
