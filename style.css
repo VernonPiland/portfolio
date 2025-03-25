@@ -9,6 +9,11 @@ body {
     overflow-y: auto;
     min-height: 100vh;
 }
+header {
+    padding: 20px;
+    background-color: #111;
+    box-shadow: 0 0 10px #ff0000;
+}
 .container {
     padding: 20px;
 }
@@ -62,6 +67,32 @@ body {
 .neon-icon:hover {
     color: #cc0000;
     text-shadow: 0 0 10px #ff0000;
+}
+footer {
+    padding: 20px;
+    background-color: #111;
+    box-shadow: 0 0 10px #ff0000;
+    margin-top: 40px;
+}
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff0000;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+}
+.contact-form button {
+    width: 100%;
 }
 @media (max-width: 600px) {
     .neon-text {
