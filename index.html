@@ -7,35 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1 class="neon-text">My Neon Portfolio</h1>
-        <p class="description">Hi, I'm a passionate web developer specializing in modern web technologies.</p>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2 class="neon-text">About Me</h2>
+            <p class="description">Hi, I'm a passionate web developer specializing in modern web technologies.</p>
+        </section>
         
-        <h2 class="neon-text">Projects</h2>
-        <div class="projects">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A brief description of the project.</p>
-                <button class="neon-button">View Project</button>
+        <section id="projects">
+            <h2 class="neon-text">Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A brief description of the project.</p>
+                    <button class="neon-button" onclick="showAlert('Project 1')">View Project</button>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A brief description of the project.</p>
+                    <button class="neon-button" onclick="showAlert('Project 2')">View Project</button>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>A brief description of the project.</p>
+                    <button class="neon-button" onclick="showAlert('Project 3')">View Project</button>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>A brief description of the project.</p>
-                <button class="neon-button">View Project</button>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>A brief description of the project.</p>
-                <button class="neon-button">View Project</button>
-            </div>
-        </div>
+        </section>
         
+        <section id="contact">
+            <h2 class="neon-text">Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button class="neon-button" type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
         <div class="social-links">
             <a href="#" class="neon-icon">GitHub</a>
             <a href="#" class="neon-icon">LinkedIn</a>
             <a href="#" class="neon-icon">Email</a>
         </div>
-    </div>
+        <p>&copy; 2024 My Neon Portfolio</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
