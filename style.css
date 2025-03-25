@@ -5,13 +5,15 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
-    }
- .container {
+    position: relative;
+    overflow: hidden;
+}
+.container {
     padding: 20px;
 }
 .neon-text {
     font-size: 2rem;
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
 }
 .description {
     max-width: 600px;
@@ -29,10 +31,10 @@ body {
     background-color: #111;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ff00ff;
+    box-shadow: 0 0 10px #ff0000;
 }
 .neon-button {
-    background-color: #ff00ff;
+    background-color: #ff0000;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -42,7 +44,7 @@ body {
     text-shadow: 0 0 5px #fff;
 }
 .neon-button:hover {
-    background-color: #9900cc;
+    background-color: #cc0000;
 }
 .social-links {
     margin-top: 20px;
@@ -51,16 +53,28 @@ body {
     gap: 15px;
 }
 .neon-icon {
-    color: #ff00ff;
+    color: #ff0000;
     text-decoration: none;
     font-size: 1.2rem;
     transition: 0.3s;
 }
 .neon-icon:hover {
-    color: #9900cc;
-    text-shadow: 0 0 10px #ff00ff;
+    color: #cc0000;
+    text-shadow: 0 0 10px #ff0000;
 }
-    
+/* Lightning Effect */
+.lightning {
+    position: absolute;
+    width: 2px;
+    height: 100vh;
+    background-color: #ff0000;
+    box-shadow: 0 0 20px #ff0000;
+    animation: flash 2s infinite ease-in-out;
+}
+@keyframes flash {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
 @media (max-width: 600px) {
     .neon-text {
         font-size: 1.5rem;
